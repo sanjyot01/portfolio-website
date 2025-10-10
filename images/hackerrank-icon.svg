@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+  <!-- Bigger HackerRank logo to match other icons -->
+  
+  <!-- Black "H" - left vertical bar (larger) -->
+  <rect x="2" y="4" width="4" height="16" fill="black"/>
+  
+  <!-- Black "H" - right vertical bar (larger) -->
+  <rect x="8" y="4" width="4" height="16" fill="black"/>
+  
+  <!-- Black "H" - horizontal crossbar (larger) -->
+  <rect x="2" y="10" width="10" height="4" fill="black"/>
+  
+  <!-- Black rectangle (larger to match) -->
+  <rect x="14" y="4" width="8" height="16" fill="black"/>
+</svg>
