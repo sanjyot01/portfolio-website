@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">eCommerce App</string>
+    
+    <!-- MainActivity -->
+    <string name="welcome_message">Welcome to eCommerce</string>
+    <string name="get_started">Get Started</string>
+    <string name="company_logo">Company Logo</string>
+    
+    <!-- LoginActivity -->
+    <string name="login">Login</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="email_required">Email is required</string>
+    <string name="invalid_email">Invalid email format</string>
+    <string name="password_required">Password is required</string>
+    <string name="password_length">Password must be at least 6 characters</string>
+    <string name="login_title">Login to Your Account</string>
+    
+    <!-- ProductActivity -->
+    <string name="products">Products</string>
+    <string name="product_list">Product List</string>
+    <string name="no_products">No products available</string>
+    <string name="price_format">$%.2f</string>
+    <string name="add_to_cart">Add to Cart</string>
+    <string name="quantity_format">In Stock: %d</string>
+</resources>
