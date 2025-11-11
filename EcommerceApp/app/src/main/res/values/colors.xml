@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Primary Colors -->
+    <!-- Primary Colors (as per requirements) -->
+    <color name="primary">#2196F3</color>
+    <color name="primaryDark">#1976D2</color>
+    <color name="accent">#FF5722</color>
+    
+    <!-- Old Primary Colors (keeping for compatibility) -->
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
@@ -15,6 +20,7 @@
     <!-- Background Colors -->
     <color name="white">#FFFFFF</color>
     <color name="black">#000000</color>
+    <color name="gray">#757575</color>
     <color name="background_light">#F5F5F5</color>
     
     <!-- Text Colors -->
