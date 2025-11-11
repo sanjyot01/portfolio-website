@@ -1,4 +1,4 @@
-package com.ecommerce.app;
+package com.urbanease.ecommerce;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -15,20 +15,17 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Initialize views
+        // Initialize views using findViewById
         btnGetStarted = findViewById(R.id.btn_get_started);
 
         // Set click listener for Get Started button
         btnGetStarted.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                navigateToLogin();
+                // Navigate to ProductActivity
+                Intent intent = new Intent(MainActivity.this, ProductActivity.class);
+                startActivity(intent);
             }
         });
-    }
-
-    private void navigateToLogin() {
-        Intent intent = new Intent(MainActivity.this, LoginActivity.class);
-        startActivity(intent);
     }
 }

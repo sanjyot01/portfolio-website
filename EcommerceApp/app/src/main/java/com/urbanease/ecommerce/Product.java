@@ -1,29 +1,35 @@
-package com.ecommerce.app;
+package com.urbanease.ecommerce;
 
-public class Product {
+import java.io.Serializable;
+
+public class Product implements Serializable {
+    private String id;
     private String name;
     private String imageUrl;
     private double price;
     private String shortDescription;
     private String fullDescription;
-    private int quantity;
 
     // Default constructor
     public Product() {
     }
 
     // Constructor with all fields
-    public Product(String name, String imageUrl, double price, String shortDescription, 
-                   String fullDescription, int quantity) {
+    public Product(String id, String name, String imageUrl, double price, 
+                   String shortDescription, String fullDescription) {
+        this.id = id;
         this.name = name;
         this.imageUrl = imageUrl;
         this.price = price;
         this.shortDescription = shortDescription;
         this.fullDescription = fullDescription;
-        this.quantity = quantity;
     }
 
     // Getters
+    public String getId() {
+        return id;
+    }
+
     public String getName() {
         return name;
     }
@@ -44,11 +50,11 @@ public class Product {
         return fullDescription;
     }
 
-    public int getQuantity() {
-        return quantity;
+    // Setters
+    public void setId(String id) {
+        this.id = id;
     }
 
-    // Setters
     public void setName(String name) {
         this.name = name;
     }
@@ -69,19 +75,15 @@ public class Product {
         this.fullDescription = fullDescription;
     }
 
-    public void setQuantity(int quantity) {
-        this.quantity = quantity;
-    }
-
     @Override
     public String toString() {
         return "Product{" +
-                "name='" + name + '\'' +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
                 ", imageUrl='" + imageUrl + '\'' +
                 ", price=" + price +
                 ", shortDescription='" + shortDescription + '\'' +
                 ", fullDescription='" + fullDescription + '\'' +
-                ", quantity=" + quantity +
                 '}';
     }
 }

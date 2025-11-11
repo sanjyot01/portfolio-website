@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.ecommerce.app">
+    package="com.urbanease.ecommerce">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -22,14 +22,12 @@
         </activity>
 
         <activity
-            android:name=".LoginActivity"
-            android:exported="false"
-            android:parentActivityName=".MainActivity" />
+            android:name=".ProductActivity"
+            android:exported="false" />
 
         <activity
-            android:name=".ProductActivity"
-            android:exported="false"
-            android:parentActivityName=".LoginActivity" />
+            android:name=".ProductDetailActivity"
+            android:exported="false" />
 
     </application>
 
